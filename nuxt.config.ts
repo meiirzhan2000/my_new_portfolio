@@ -151,6 +151,12 @@ export default defineNuxtConfig({
       supabaseKey: process.env.SUPABASE_KEY,
     }
   },
+
+  ssr: true,
+  nitro: {
+    preset: 'netlify',
+    static: true
+  },
   
   tailwindcss: {
     cssPath: '~/assets/css/main.css',

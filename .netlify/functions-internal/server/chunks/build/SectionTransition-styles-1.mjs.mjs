@@ -1,0 +1,4 @@
+const SectionTransition_vue_vue_type_style_index_0_scoped_008a32b6_lang = ".section-transition[data-v-008a32b6]{transition-duration:.8s;transition-property:opacity,transform;transition-timing-function:ease-out;will-change:opacity,transform}.fade-in[data-v-008a32b6]{opacity:0}.slide-up[data-v-008a32b6]{opacity:0;transform:translateY(40px)}.slide-down[data-v-008a32b6]{opacity:0;transform:translateY(-40px)}.slide-left[data-v-008a32b6]{opacity:0;transform:translate(40px)}.slide-right[data-v-008a32b6]{opacity:0;transform:translate(-40px)}.scale-up[data-v-008a32b6]{opacity:0;transform:scale(.8)}.scale-down[data-v-008a32b6]{opacity:0;transform:scale(1.2)}.section-transition.is-visible[data-v-008a32b6]{opacity:1;transform:none}";
+
+export { SectionTransition_vue_vue_type_style_index_0_scoped_008a32b6_lang as S };
+//# sourceMappingURL=SectionTransition-styles-1.mjs.mjs.map
