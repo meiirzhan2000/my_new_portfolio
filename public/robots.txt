@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /private/
+Disallow: /migration
+
+Sitemap: https://meiirzhan-portfolio.com/sitemap.xml
