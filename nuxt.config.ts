@@ -36,7 +36,6 @@ export default defineNuxtConfig({
   ],
   
   image: {
-    // Configure @nuxt/image options
     dir: 'assets/images',
     // Quality settings for optimization
     quality: 80,

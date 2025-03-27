@@ -36,8 +36,8 @@ export interface Database {
       projects: {
         Row: {
           id: string
-          title: Json // Updated to support translations
-          description: Json | null // Updated to support translations
+          title: Json
+          description: Json | null
           image_url: string | null
           technologies: Json | null
           featured: boolean | null
@@ -47,8 +47,8 @@ export interface Database {
         }
         Insert: {
           id?: string
-          title: Json // Updated to support translations
-          description?: Json | null // Updated to support translations
+          title: Json
+          description?: Json | null
           image_url?: string | null
           technologies?: Json | null
           featured?: boolean | null
@@ -58,8 +58,8 @@ export interface Database {
         }
         Update: {
           id?: string
-          title?: Json // Updated to support translations
-          description?: Json | null // Updated to support translations
+          title?: Json
+          description?: Json | null
           image_url?: string | null
           technologies?: Json | null
           featured?: boolean | null
@@ -97,7 +97,7 @@ export interface Database {
       certifications: {
         Row: {
           id: string
-          name: Json // Updated to support translations
+          name: Json
           issuing_organization: string
           issue_date: string
           expiration_date: string | null
@@ -109,7 +109,7 @@ export interface Database {
         }
         Insert: {
           id?: string
-          name: Json // Updated to support translations
+          name: Json
           issuing_organization: string
           issue_date: string
           expiration_date?: string | null
@@ -121,7 +121,7 @@ export interface Database {
         }
         Update: {
           id?: string
-          name?: Json // Updated to support translations
+          name?: Json
           issuing_organization?: string
           issue_date?: string
           expiration_date?: string | null

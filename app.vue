@@ -138,7 +138,6 @@ body {
   filter: grayscale(1);
 }
 
-/* Fix for FontAwesome icon alignment */
 svg {
   display: inline-block;
   vertical-align: -0.125em;

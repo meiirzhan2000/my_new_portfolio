@@ -17,7 +17,7 @@
     <!-- Main Content -->
     <div class="container-custom relative z-10">
       <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 md:gap-12 items-center">
-        <!-- Left side content (3 columns on large screens) -->
+        <!-- Left side content -->
         <SectionTransition class="slide-right lg:col-span-3">
           <div class="space-y-8">
             <!-- Name with gradient text -->
@@ -91,7 +91,7 @@
           </div>
         </SectionTransition>
         
-        <!-- Right side - Enhanced Animated Profile (2 columns on large screens) -->
+        <!-- Right side -->
         <SectionTransition class="sm:py-8 md:py-8 lg:py-8 py-0 slide-left flex justify-center lg:justify-end lg:col-span-2" :delay="300">
           <div class="relative">
             <!-- Decorative rings -->
@@ -132,7 +132,6 @@ import type { Profile } from '~/types';
 import SectionTransition from '../ui/SectionTransition.vue';
 import { useTranslation } from '~/composables/useTranslation';
 
-// Use local profile data instead of fetching from Supabase
 const profile: Profile = profileData;
 
 // Use translation composable

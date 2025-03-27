@@ -263,7 +263,7 @@ const categories = computed(() => {
   const allTechnologies = projects.value.flatMap(project => project.technologies || []);
   const uniqueTechnologies = [...new Set(allTechnologies)];
   
-  // Return the top used technologies (adjust this based on your data)
+  // Return the top used technologies
   return uniqueTechnologies.slice(0, 6);
 });
 

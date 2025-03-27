@@ -4,7 +4,7 @@ export const profileData: Profile = {
   id: '1',
   name: {
     en: 'Meiirzhan Baitangatov',
-    ru: 'Мейиржан Байтангатов'
+    ru: 'Мейржан Байтанатов'
   },
   title: {
     en: 'Full Stack Developer',

@@ -1,7 +1,7 @@
 <template>
   <section id="contact" class="section bg-neutral-800 py-16">
     <div class="container-custom">
-      <!-- Section Heading - Use AnimatedHeading properly -->
+      <!-- Section Heading -->
       <AnimatedHeading :text="$t('contact.title')" textClass="text-3xl lg:text-4xl font-bold mb-10 text-white" />
       
       <!-- Contact Card -->
@@ -25,7 +25,7 @@
                     <div class="contact-icon-container flex-shrink-0 bg-blue-600/20 p-4 rounded-lg text-blue-400 group-hover:scale-110 transition-transform">
                       <Icon name="mdi:email" size="32" />
                     </div>
-                    <div class="min-w-0"> <!-- Added min-w-0 to enable text truncation -->
+                    <div class="min-w-0">
                       <h4 class="text-xl font-medium text-white mb-2">{{ $t('contact.email') }}</h4>
                       <a href="mailto:rikimarubro@gmail.com" class="text-neutral-400 hover:text-blue-400 transition-colors block overflow-hidden text-ellipsis">
                         rikimarubro@gmail.com

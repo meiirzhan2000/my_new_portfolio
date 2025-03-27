@@ -122,7 +122,6 @@ const translatedInterests = computed(() => featuredInterests.value);
   transform: scaleX(1);
 }
 
-/* Fixed height animation container */
 .interest-animation-container {
   height: 220px;
   position: relative;

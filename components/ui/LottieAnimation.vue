@@ -6,7 +6,6 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, watch, defineComponent } from 'vue';
 
-// Define the component name
 defineComponent({
   name: 'LottieAnimation'
 });

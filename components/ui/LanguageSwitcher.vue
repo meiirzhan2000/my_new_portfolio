@@ -1,4 +1,3 @@
-<!-- components/ui/LanguageToggle.vue -->
 <template>
   <ClientOnly>
     <button 
@@ -43,7 +42,6 @@ const { isEnglish, toggleLanguage, isTranslating } = useTranslation();
   @apply transform scale-95;
 }
 
-/* Placeholder styling */
 .language-toggle-placeholder {
   @apply flex items-center justify-center;
 }

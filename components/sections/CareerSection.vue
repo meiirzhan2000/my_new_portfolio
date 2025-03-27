@@ -200,7 +200,7 @@ const setupEntranceAnimations = () => {
   });
 };
 
-// Auto-advance slides (optional)
+// Auto-advance slides
 let autoplayIntervals: number[] = [];
 
 const startAutoplay = () => {
