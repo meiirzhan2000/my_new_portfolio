@@ -16,13 +16,13 @@ const { currentLang } = useTranslation();
 // SEO Metadata
 useHead({
   // Title template
-  titleTemplate: (title) => title ? `${title} | ${t('meta.title')}` : t('meta.title'),
+  titleTemplate: (title) => title ? `${title} | Meiirzhan's Portfolio` : `Meiirzhan's Portfolio`,
   
   // Default meta tags
   meta: [
     { charset: 'utf-8' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    { name: 'description', content: t('meta.description') },
+    { name: 'description', content: "Full Stack Developer specializing in web and mobile application development using Vue.js, React, and Spring Boot. Explore my projects and skills." },
     { name: 'keywords', content: 'full stack developer, portfolio, web development, mobile development, vue, react, spring boot' },
     { name: 'author', content: 'Meiirzhan Baitangatov' },
     
@@ -32,8 +32,8 @@ useHead({
     // Open Graph / Facebook
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: process.client ? window.location.href : 'https://meiirzhan-portfolio.com' },
-    { property: 'og:title', content: t('meta.og.title') },
-    { property: 'og:description', content: t('meta.og.description') },
+    { property: 'og:title', content: "Meiirzhan Baitangatov - Full Stack Developer Portfolio" },
+    { property: 'og:description', content: "Explore my projects and skills in web and mobile development featuring Vue.js, React, Node.js and more." },
     { property: 'og:image', content: '/images/og-image.jpg' },
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' },
@@ -42,8 +42,8 @@ useHead({
     // Twitter
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:url', content: process.client ? window.location.href : 'https://meiirzhan-portfolio.com' },
-    { name: 'twitter:title', content: t('meta.og.title') },
-    { name: 'twitter:description', content: t('meta.og.description') },
+    { name: 'twitter:title', content: "Meiirzhan Baitangatov - Full Stack Developer" },
+    { name: 'twitter:description', content: "Explore my projects and skills in web and mobile development featuring Vue.js, React, Node.js and more." },
     { name: 'twitter:image', content: '/images/twitter-card.jpg' },
     
     // iOS
@@ -101,7 +101,7 @@ onMounted(() => {
       "https://github.com/meiirzhan2000",
       "https://www.linkedin.com/in/meiirzhan-baitangatov-871632248/"
     ],
-    "description": t('meta.description')
+    "description": "Explore my projects and skills in web and mobile development featuring Vue.js, React, Node.js and more."
   });
   document.head.appendChild(script);
 });
