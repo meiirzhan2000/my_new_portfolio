@@ -1,13 +1,13 @@
-<!--layouts/default.vue (Updated with Language Switch)-->
+<!--layouts/default.vue (Updated with Fixed Header for Mobile/Tablet)-->
 <template>
-  <div class="flex flex-col min-h-screen bg-neutral-900 text-neutral-50">
-    <!-- Animated Header -->
+  <div class="flex flex-col min-h-screen bg-neutral-900 text-neutral-50 overflow-x-hidden">
+    <!-- Animated Header - Added width constraints and overflow handling -->
     <header
       ref="mainHeader"
-      class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm border-b border-neutral-800 header-animation"
+      class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm border-b border-neutral-800 header-animation w-full"
       :class="{ 'is-visible': isHeaderVisible }"
     >
-      <div class="container-custom py-4">
+      <div class="container-custom py-4 px-4 mx-auto">
         <nav class="flex items-center justify-between">
           <!-- Animated Logo -->
           <NuxtLink
@@ -120,9 +120,9 @@
       <Transition name="mobile-menu">
         <div
           v-show="isMobileMenuOpen"
-          class="md:hidden bg-black border-t border-neutral-800"
+          class="md:hidden bg-black border-t border-neutral-800 w-full"
         >
-          <div class="container-custom py-4">
+          <div class="container-custom py-4 px-4 mx-auto">
             <ul class="space-y-4">
               <li
                 v-for="(item, index) in navItems"
@@ -145,13 +145,13 @@
     </header>
 
     <!-- Main Content -->
-    <main class="flex-grow">
+    <main class="flex-grow w-full overflow-x-hidden">
       <slot />
     </main>
 
     <!-- Footer -->
-    <footer class="bg-black border-t border-neutral-800">
-      <div class="container-custom py-8">
+    <footer class="bg-black border-t border-neutral-800 w-full">
+      <div class="container-custom py-8 px-4 mx-auto">
         <div
           class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
         >
@@ -312,6 +312,13 @@ onMounted(() => {
 .footer-icon-animation {
   animation: fade-in-up 0.5s ease forwards;
   opacity: 0;
+}
+
+/* Custom container to ensure proper width constraints */
+.container-custom {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 /* Animation Keyframes */
